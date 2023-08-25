@@ -43,7 +43,7 @@ class Student(Person):
 class BankAccount:
     def __init__(self, __acc_id, __holder_name, __balance):
         self.__acc_id = __acc_id
-        self.__holdername = __holder_name
+        self.__holder_name = __holder_name
         self.__balance = __balance
     
     def top_up(self, amount):
@@ -56,3 +56,7 @@ class BankAccount:
         print(f"Bank Account Name : {self.__holder_name}\n"
               f"Bank Account ID : {self.__acc_id}\n"
               f"Your current balance : RM {self.__balance}")
+        
+bankaccount = BankAccount(11230, "Nicholas", 87132)
+bankaccount.top_up(1000)
+bankaccount.check_balance()
