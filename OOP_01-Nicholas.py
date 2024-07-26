@@ -7,8 +7,7 @@ class Person:
         self.address = address
         
     def display_information(self):
-        print (f"{self.name} {self.age} {self.address}")
-        step = self.name
+        print(f"{self.name} {self.age} {self.address}")
         print(self.name)
     
     def set_name(self, name):
